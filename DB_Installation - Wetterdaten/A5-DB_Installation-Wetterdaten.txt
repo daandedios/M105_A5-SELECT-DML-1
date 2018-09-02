@@ -13,7 +13,7 @@ DB_Installation: Wetterdaten
 
 -- Installation
 
-1. SQL File Downloadent : https://raw.githubusercontent.com/daandedios/M105_A5-SELECT-DML-1/master/DB_wetterdaten_2018-08-14.sql
+1. SQL File Downloadent : https://raw.githubusercontent.com/daandedios/M105_A5-SELECT-DML-1/master/DB_Installation%20-%20Wetterdaten/DB_wetterdaten.sql
 2. SQL File in SQL Programm importieren oder Copy paste
 3. SQL Skript ausführen (wird ca. 2 Min dauern)
 
