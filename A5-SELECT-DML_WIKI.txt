@@ -1,0 +1,164 @@
+/*
+*****************************
+Autor: Daan de Dios
+Datum: 2018-09-02
+WIKI: Wichtige Befehle DML
+*****************************
+######################################
+!! Anbei sind die Wichtigsten DML SQL Befehle !!
+!! Bei Fragen stehe ich euch gerne zu Verfügung: "SQL.dedios@gmail.com" oder per WhatsApp. !!
+######################################
+*/
+
+-- SELECT Abfrage
+`SELECT column1, column2, ...
+FROM table_name;
+
+SELECT * FROM table_name;`
+
+
+-- DISTINCT SELECT
+`SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);`
+
+-- WHERE Bedingung
+`SELECT column1, column2, ...
+FROM table_name
+WHERE condition;`
+
+-- AND
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+
+-- OR
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+
+-- NOT
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+
+-- Order by Sortieren nach
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+-- is Null
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+-- is Not null
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
+-- Limmit
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+
+-- Min Select
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+-- Max Select
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+-- COUNT
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+-- AVG
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+-- SUM
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+-- LIKE
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+
+-- IN
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+
+-- IN and SELECT
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+
+-- BETWEEN()
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+
+-- Alias
+SELECT column_name AS alias_name
+FROM table_name;
+
+
+-- INNER JOIN
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2 ON table1.column_name = table2.column_name;
+
+-- LEFT JOIN
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2 ON table1.column_name = table2.column_name;
+
+-- RIGHT JOIN
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+
+-- FULL Join
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
+
+-- SELF JOIN
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+
+-- UNION
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+-- GROUP BY
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+
+-- HAVING
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
