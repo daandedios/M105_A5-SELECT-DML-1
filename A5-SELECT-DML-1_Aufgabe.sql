@@ -8,7 +8,7 @@ Aufgabe: A5 - SELECT-DML 1
 !! Um diese Aufgabe zu lösen Benötigt ihr die "wetterdaten" Datenbbakt.
 !! Installationsanleitung für die DB unter: https://github.com/daandedios/M105_A5-SELECT-DML-1/blob/master/DB_Installation%20-%20Wetterdaten/A5-DB_Installation-Wetterdaten.txt
 
-!! Aufgaben ohne Lösungen sind unter folgendem Link zu finden:
+!! Musterlösung unter: https://github.com/daandedios/M105_A5-SELECT-DML-1/blob/master/A5-SELECT-DML-1_Musterl%C3%B6sungen.sql
 !! Bei Fragen stehe ich euch gerne zu Verfügung: "SQL.dedios@gmail.com" oder per WhatsApp.
 ######################################
 */
