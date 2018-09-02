@@ -1,0 +1,20 @@
+﻿/*
+*****************************
+Autor: Daan de Dios
+Datum: 2018-09-02
+DB_Installation: Wetterdaten
+*****************************
+######################################
+!! Anbei wird beschrieben wie die DB Wetterdaten installiert wird. !!
+!! Bei Fragen stehe ich euch gerne zu Verfügung: "SQL.dedios@gmail.com" oder per WhatsApp. !!
+######################################
+*/
+
+
+-- Installation
+
+1. SQL File Downloadent : https://raw.githubusercontent.com/daandedios/M105_A5-SELECT-DML-1/master/DB_wetterdaten_2018-08-14.sql
+2. SQL File in SQL Programm importieren oder Copy paste
+3. SQL Skript ausführen (wird ca. 2 Min dauern)
+
+--
